@@ -1,0 +1,123 @@
+body
+{
+    @include gradient-directional-multi-color(45deg, #ff7d7d 0%, #ff8964 50%, #d62525 100%);
+}
+
+.preloader 
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffff;
+    z-index: 99999;
+}
+  
+.loader 
+{
+    border: 16px solid #ffff;
+    border-top: 16px solid #e2e2e2;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 1s linear infinite;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -60px;
+    margin-left: -60px;
+}
+
+.container,
+.container-fluid{
+    animation: transitionIn 0.75s;
+}
+
+
+.rectangle 
+{
+    height: 40px;
+    width: 7px;
+
+    @include gradient-directional-multi-color(45deg, #ff7d7d 0%, #ff8964 50%, #d62525 100%);
+  }
+
+#add-page,
+#save-product
+{
+    @include gradient-horizontal(#ff7d7d, #d62525, 0%, 100%);
+    @include transition (all .2s);
+
+    &:hover {
+        -moz-border-color: #d62525;
+        -webkit-border-color: #d62525;
+        border-color: #d62525;
+		background: white; 
+        color: #d62525 !important;
+		transform: scale(1.1);
+    }
+}
+
+#delete-product-btn
+{
+    color: rgba(255, 255, 255, 0.9) !important;
+    @include transition (all .2s);
+
+    &:hover {
+        background: red !important;
+        -moz-border-color: red !important;
+        -webkit-border-color: red !important;
+        border-color: red !important;
+        box-shadow: 0 5px 15px rgba(182, 92, 92, 0.4);
+		transform: scale(1.1);
+    }
+}
+
+#cancel-add
+{
+    @include transition (all .2s);
+
+    -moz-border-color: #d62525;
+    -webkit-border-color: #d62525;
+    border-color: #d62525;
+	background: white; 
+    color: #d62525 !important;
+
+    &:hover {
+		transform: scale(1.1);
+    }
+}
+
+#product-item
+{
+    @include transition (all .2s);
+
+    &:hover {
+		transform: scale(1.05);
+    }
+}
+
+// animation for fade-in on page - setup
+@keyframes transitionIn
+{
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+// preloader - setup
+@keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
