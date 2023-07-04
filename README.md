@@ -18,6 +18,6 @@ I've worked on this project task for approximately a month, learning a new codin
 - SASS: advantage
 - MySQL: ^5.6 obligatory
 
-It was a good work of study and I'm very happy with the final result, which you can check it here: https://joaopedrocabral.000webhostapp.com/index.php
+It was a good work of study and I'm very happy with the final result, which you can check it here: https://joaopedrocabral.000webhostapp.com/
 
 If you're doing this test and had found this repository right here, please, don't copy it and do yourself your best!
