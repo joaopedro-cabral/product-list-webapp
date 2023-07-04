@@ -1,5 +1,5 @@
 # product-list-webapp
-Task for scandiweb Junior Web Developer position: a product list/adding web-app.
+Task for a Junior Web Developer position: a product list/adding web-app.
 
 I've worked on this project task for approximately a month, learning a new coding language (php) with a few addons for HTML/CSS like Bootstrap and Scss. For such, I had to work based on some requirements, as follows:
 
